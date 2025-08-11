@@ -213,11 +213,10 @@ layout: build
 ### 2. Motors Not Responding
 - **Wiring:** Verify all motor wires are connected to the correct pins on the motor driver and Raspberry Pi.
 - **Power:** Ensure the battery or power source for the motors is charged and connected.
-- **Code:** Test with a simple motor control script to isolate hardware vs. software issues.
 
 ### 3. Camera Not Detected
 - **Connection:** Make sure the camera ribbon cable is fully inserted and oriented correctly.
-- **Enable camera:** Run `sudo raspi-config` and enable the camera interface.
+- **Legacy support:** Confirm that legacy camera support is enabled on the RPI
 - **Test:** Use `raspistill -o test.jpg` to check if the camera works.
 
 ### 4. Wi-Fi/Network Issues
@@ -231,16 +230,6 @@ layout: build
 - **Permissions:** Use `sudo` only when necessary.
 
 ### 6. Car Not Driving Straight
-- **Calibration:** Adjust motor calibration values in your control script.
-- **Mechanical:** Check for obstructions or misaligned wheels.
-
-### 7. Unexpected Shutdowns or Freezes
-- **Overheating:** Ensure the Pi has proper ventilation or a heatsink.
-- **Power:** Use a reliable power supply and check for voltage drops.
-
-### 8. No Video Stream
-- **Firewall:** Ensure no firewall is blocking the streaming port.
-- **Browser:** Try a different browser or clear cache.
-- **Service:** Restart the streaming service or check logs for errors.
+- **Calibration:** Use the bais adjustment system on the bottom of the car
 
 If you encounter other issues, consult the [DeepPiCar GitHub Issues page](https://github.com/your-repo/issues) or relevant forums for assistance.
