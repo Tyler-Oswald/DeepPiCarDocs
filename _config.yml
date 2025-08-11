@@ -15,5 +15,5 @@ include:
 just_the_docs:
   nav_sort: true
   custom_css:
-    - assets/css/side_bar.css
+    - _sass/custom/custom.scss
 
