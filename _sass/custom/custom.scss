@@ -26,6 +26,10 @@ html, body {
   z-index: 1000;
 }
 
+.side-bar .nav-list-link {
+  padding-left: 3rem !important; // move the page names to the right
+}
+
 
 .main {
   margin-left: 240px;                    
